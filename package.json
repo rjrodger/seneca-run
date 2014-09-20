@@ -1,0 +1,35 @@
+{
+  "name": "seneca-run",
+  "version": "0.1.0",
+  "description": "Seneca plugin to run external processes.",
+  "main": "run.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rjrodger/seneca-run.git"
+  },
+  "keywords": [
+    "seneca",
+    "run",
+    "plugin"
+  ],
+  "author": "Richard Rodger (http://richardrodger.com)",
+  "license": "MIT",
+  "dependencies": {
+    "eraro": "^0.1.6",
+    "mkdirp": "^0.5.0",
+    "nid": "^0.3.2",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "seneca": "^0.5.20"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.txt",
+    "run.js"
+  ]
+}
