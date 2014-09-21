@@ -76,7 +76,7 @@ with the _role:run,cmd:query,procid:?_ pattern.
 
 To receive reports of the status as it runs, subscribe to the
 _role:run,info:report_ pattern. This will give you reports of all
-running processes. To narrow it down to one, process, include the name
+running processes. To narrow it down to one process, include the name
 of the process in the pattern:
 
 ```js
@@ -96,7 +96,6 @@ The options are:
   
    * _batch_: Object. Keys are the names of processes. Values are options for batch-process.
 
-```
 
 
 ## Testing
