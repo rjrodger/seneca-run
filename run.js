@@ -62,7 +62,7 @@ module.exports = function( options ) {
 
   seneca.add({
     role: plugin,
-    info:  'report',
+    info: 'report',
   }, function(args,done){done()})
 
 
@@ -87,17 +87,20 @@ module.exports = function( options ) {
       }
       
       seneca.act({
-        role:plugin,
-        info:'report',
-        name:name,
-        procid:proc.procid,
-        report:report
+        role:   plugin,
+        info:   'report',
+        name:   name,
+        procid: proc.procid,
+        report: report
       })
     })
 
 
     proc.run()
-    inflight[proc.procid] = proc
+    inflight[proc.procid] = {
+      procid: proc.procid,
+      status: 'starting'
+    }
 
     done(null,{procid:proc.procid,name:args.name})
   }
