@@ -1,6 +1,6 @@
 {
   "name": "seneca-run",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Seneca plugin to run external processes.",
   "main": "run.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "batch-process": "^0.1.0",
     "eraro": "^0.1.6",
-    "mkdirp": "^0.5.0",
+    "lru-cache": "^2.5.0",
     "nid": "^0.3.2",
     "underscore": "~1.6.0"
   },
